@@ -4,6 +4,12 @@
 โปรเจ็คนี้คือ **Streamlit chatbot** ที่ช่วยอัพโหลดใบเสร็จ → OCR + LLM แปลงข้อมูล → บันทึกลง Google Sheets → สรุปยอดรายวัน/สัปดาห์/เดือน
 
 ---
+##
+💚 Frontend (Streamlit UI) → frontend/ , app.py
+💚  OCR & LLM Parser → ocr_llm/
+💚 Google Sheets Integration & Analytics → sheets/
+💚 Backend / Integration / Deployment → backend/ + root app.py
+💚 Shared utilities → utils/ (schema, common helpers)
 
 ## 🔥 งานแต่ละคน
 
@@ -35,13 +41,13 @@
 4. **Backend / Integration / Deployment**  
    - คนรับผิดชอบ: **ตูน**  
    - งาน:  
-     - ทำ API (FastAPI หรือ backend ใน Streamlit)  
+     - ทำ API ( backend ใน Streamlit)  
      - Routes:  
        - `/upload` → OCR + LLM → JSON  
        - `/confirm` → Save to Google Sheets  
        - `/summary?period=xxx`  
      - จัดการ secrets (API keys, service account)  
-     - Deploy บอทบน Render / Cloud Run  
+     - Deploy บอทบน streamlit
 
 ---
 

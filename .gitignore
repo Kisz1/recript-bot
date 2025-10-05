@@ -59,4 +59,7 @@ data/*.txt
 # Temporary files
 tmp/
 temp/
-.tmp/
+.tmp/.streamlit/secrets.toml
+.venv/
+__pycache__/
+.env
